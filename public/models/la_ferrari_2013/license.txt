@@ -1,0 +1,11 @@
+Model Information:
+* title:	La Ferrari 2013
+* source:	https://sketchfab.com/3d-models/la-ferrari-2013-3d8a15d607b548ee901c5ffb3927cd70
+* author:	Alucard2077 (https://sketchfab.com/Alucard2077)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "La Ferrari 2013" (https://sketchfab.com/3d-models/la-ferrari-2013-3d8a15d607b548ee901c5ffb3927cd70) by Alucard2077 (https://sketchfab.com/Alucard2077) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
