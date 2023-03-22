@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
 export function Chevrolette() {
-  const gltf = useLoader(
-    GLTFLoader,
-    process.env.PUBLIC_URL + "models/chevrolet_corvette_c7/scene.gltf"
-  );
+  const gltf = useLoader(GLTFLoader, "models/chevrolet_corvette_c7/scene.gltf");
 
   useEffect(() => {
     gltf.scene.scale.set(0.005, 0.005, 0.005);
