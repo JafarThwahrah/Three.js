@@ -10,6 +10,14 @@ import {
 import { Ground } from "./Ground";
 import { Chevrolette } from "./Chevrolet";
 import { Rings } from "./Rings";
+import { Boxes } from "./Boxes";
+import {
+  Bloom,
+  ChromaticAberration,
+  EffectComposer,
+} from "@react-three/postprocessing";
+import { BlendFunction } from "postprocessing";
+import { GridPlane } from "./GridPlane";
 function CarShow() {
   return (
     <>
@@ -24,7 +32,9 @@ function CarShow() {
           </>
         )}
       </CubeCamera>
+      <Boxes />
       <Rings />
+      <GridPlane />
       <spotLight
         color={[1, 0.25, 0.7]}
         intensity={1.5}
@@ -45,6 +55,21 @@ function CarShow() {
         shadow-bais={-0.0001}
       />
       <Ground />
+      <EffectComposer>
+        <Bloom
+          blendFunction={BlendFunction.ADD}
+          intensity={1}
+          width={300}
+          height={300}
+          kernelSize={5}
+          luminanceThreshold={0.15}
+          luminanceSmoothing={0.025}
+        />
+        <ChromaticAberration
+          blendFunction={BlendFunction.NORMAL}
+          offset={[0.0005, 0.0012]}
+        />
+      </EffectComposer>
     </>
   );
 }
